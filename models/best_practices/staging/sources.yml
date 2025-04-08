@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: main
+    tables:
+      - name: sales
+        description: "Amazon sales report data loaded from CSV"
+        external:
+          location: "data/AMZ_SALES.csv"
+          format: "csv"
+          options: "HEADER=TRUE"
